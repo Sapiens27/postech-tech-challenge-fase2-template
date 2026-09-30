@@ -1,13 +1,12 @@
 {
-  "turma": "12DTAT",
-  "grupo": "Grupo 00",
+  "turma": "2DTATBB",
+  "grupo": "Individual",
   "integrantes": [
-    { "nome": "Nome Completo do Integrante", "rm": "RM000000" },
-    { "nome": "Nome Completo do Integrante", "rm": "RM000000" }
+    { "nome": "Leandro Alexandre da Silva", "rm": "RM377795" }
   ],
   "links": {
-    "repositorio": "https://github.com/usuario/nome-do-repositorio",
-    "video": "https://www.youtube.com/watch?v=xxxxxxxxxxx",
-    "apresentacao": "https://github.com/usuario/nome-do-repositorio/blob/main/docs/apresentacao_executiva.pdf"
+    "repositorio": "https://github.com/Sapiens27/postech-tech-challenge-fase2-template",
+    "video": "https://drive.google.com/file/d/1JHEYbMf8UVp1AWV1vrT9avv7LLt-nJY4/view?usp=drive_link",
+    "apresentacao": "https://github.com/Sapiens27/postech-tech-challenge-fase2-template/blob/main/docs/apresentacao_executiva.pdf"
   }
 }
