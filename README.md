@@ -126,12 +126,27 @@ Inicie o Jupyter Notebook:
 jupyter notebook
 ```
 
-Os arquivos utilizados no projeto estão disponíveis em `data/raw/`:
+Os dados utilizados no projeto não são versionados no repositório.
+
+Baixe o dataset **Credit Card Approval Prediction** no Kaggle:
+
+https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction/data
+
+Após o download, coloque os seguintes arquivos na pasta `data/raw/`:
 
 - `application_record.csv`
 - `credit_record.csv`
 
-Os notebooks utilizam caminhos relativos para acessar os dados, permitindo a execução do projeto após o clone do repositório sem necessidade de configuração de caminhos locais.
+A estrutura esperada é:
+
+```text
+data/
+└── raw/
+    ├── application_record.csv
+    └── credit_record.csv
+```
+
+Os notebooks utilizam caminhos relativos para acessar esses arquivos, permitindo a reprodução do projeto independentemente do diretório local utilizado.
 
 Execute os notebooks nesta ordem:
 
@@ -141,7 +156,6 @@ Execute os notebooks nesta ordem:
 4. `notebooks/04_avaliacao.ipynb` — avaliação final do modelo selecionado no conjunto de teste, análise das métricas, importância das variáveis e conclusões.
 
 A ordem de execução deve ser mantida para acompanhar corretamente as etapas metodológicas desenvolvidas no projeto.
-
 ---
 
 ## 5. Resultados
@@ -191,29 +205,27 @@ Os resultados apresentados devem ser interpretados como **associações preditiv
 ```text
 .
 ├── data/
-│   └── raw/
-│       ├── application_record.csv
-│       └── credit_record.csv
+│   ├── raw/                 dados brutos — não versionados
+│   └── processed/           dados processados — não versionados
 ├── notebooks/
 │   ├── 01_eda.ipynb
 │   ├── 02_preprocessamento.ipynb
 │   ├── 03_modelagem.ipynb
 │   └── 04_avaliacao.ipynb
-├── docs/                 apresentação e documentação da entrega
-├── results/              resultados e artefatos gerados
-├── src/                  código-fonte auxiliar
-├── submissao/            arquivos relacionados à submissão
-├── requirements.txt      dependências do projeto
-└── README.md             documentação principal
+├── docs/                    apresentação e documentação da entrega
+├── results/                 resultados e artefatos gerados
+├── src/                     código-fonte auxiliar
+├── submissao/               arquivos relacionados à submissão
+├── requirements.txt         dependências do projeto
+└── README.md                documentação principal
 ```
 
-Os dados brutos necessários para reprodução estão disponíveis em `data/raw/`.
+Os dados brutos não são versionados no Git. Para reproduzir o projeto, os arquivos `application_record.csv` e `credit_record.csv` devem ser baixados da fonte indicada e colocados localmente em `data/raw/`.
 
 Os notebooks estão organizados de acordo com a sequência das etapas do projeto, desde a análise exploratória até a avaliação final do modelo.
 
 Detalhes e convenções em [`ESTRUTURA.md`](ESTRUTURA.md).  
 Antes de enviar, percorra o [`CHECKLIST.md`](CHECKLIST.md).
-
 ---
 
 ## 8. Tecnologias
