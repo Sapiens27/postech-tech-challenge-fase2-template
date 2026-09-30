@@ -1,8 +1,5 @@
 # Tech Challenge — Fase 2 | POSTECH Data Analytics
 
-> **INSTRUÇÕES:** este README é um template. Substitua **todos** os blocos marcados com
-> `<!-- PREENCHER -->` e apague as linhas de instrução antes de submeter.
-
 ---
 
 ## 1. Identificação
@@ -28,11 +25,8 @@ Estes três links são **obrigatórios** e devem ser idênticos aos do PDF de su
 | Item | Link |
 |---|---|
 | Repositório | https://github.com/Sapiens27/postech-tech-challenge-fase2-template |
-| Vídeo executivo (≤ 5 min) | <!-- PREENCHER: YouTube não listado / Drive com acesso liberado --> |
-| Apresentação | <!-- PREENCHER: link do arquivo em `docs/` ou Drive --> |
-
-> ⚠️ Repositório privado ou inacessível inviabiliza a avaliação da entrega.
-> Confira o acesso em uma janela anônima antes de enviar.
+| Vídeo executivo (≤ 5 min) | https://drive.google.com/file/d/1JHEYbMf8UVp1AVW1vrT9avv7LLt-nJY4/view?usp=drive_link |
+| Apresentação | docs/apresentacao_executiva.pdf |
 
 ---
 
@@ -65,8 +59,6 @@ Essa distribuição evidencia um problema de classes desbalanceadas, considerado
 | Linhas × colunas | `application_record.csv`: 438.557 × 18; `credit_record.csv`: 1.048.575 × 3 |
 | Período / versão | Dataset disponibilizado publicamente no Kaggle |
 | Licença de uso | CC0: Public Domain |
-
-Descrição das variáveis:
 
 Descrição das variáveis:
 
@@ -166,7 +158,7 @@ A ordem de execução deve ser mantida para acompanhar corretamente as etapas me
 
 **Modelo escolhido:** Random Forest.
 
-O Random Forest apresentou o melhor desempenho entre os algoritmos avaliados durante a etapa de validação cruzada, superando a Regressão Logística e o HistGradientBoosting. O modelo foi então avaliado uma única vez no conjunto de teste reservado, obtendo AUC-ROC de aproximadamente **0,805**.
+O Random Forest apresentou os maiores valores de ROC-AUC e PR-AUC na validação cruzada entre os algoritmos avaliados, superando a Regressão Logística e o HistGradientBoosting. Por esse motivo, foi selecionado como modelo final e avaliado uma única vez no conjunto de teste reservado, no qual obteve AUC-ROC de aproximadamente 0,805.
 
 **Métricas priorizadas:** devido ao desbalanceamento da variável-alvo — aproximadamente **11,77%** dos clientes pertencem à classe de maus pagadores — a acurácia isoladamente não é suficiente para avaliar a qualidade do modelo. Foram priorizadas métricas capazes de avaliar a discriminação da classe minoritária, especialmente **AUC-ROC, PR-AUC, recall, precisão e F1-score**.
 
@@ -238,3 +230,6 @@ Antes de enviar, percorra o [`CHECKLIST.md`](CHECKLIST.md).
 - scikit-learn
 - SciPy
 - Git e GitHub
+- ChatGPT (OpenAI) — GPT-5.6 Sol
+- Canva
+- Microsoft Clipchamp
